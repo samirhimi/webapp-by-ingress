@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: webapp
+  name: webapp
+  namespace: dev
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      volumes:
+      - name: webapp-vol
+        configMap:
+          name: webapp-cm
+      containers:
+      - image: nginx:alpine
+        name: nginx
+        volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: webapp-vol
+        resources: 
+          requests:
+            cpu: 10m
+            memory: 32Mi
+          limits:
+            cpu: 20m
+            memory: 64Mi
+        # command:
+        #   - /bin/sh
+        #   - -c
+        #   - "echo 'WELCOME TO MY WEBAPP!' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'" 
+
