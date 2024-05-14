@@ -1,7 +1,7 @@
 # webapp-by-ingress
 To simplify the deployment i passed the index.html as configmap called webapp-cm
 
-Create it by passing the command:
+Create it by the command:
 
 kubectl -n dev create configmap webapp-cm --from-file=website/index.html
 
