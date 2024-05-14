@@ -1,0 +1,90 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  data:
+    root-cert.pem: |
+      -----BEGIN CERTIFICATE-----
+      MIIC/DCCAeSgAwIBAgIQMdNssgpEkCel9ClyXHl+IjANBgkqhkiG9w0BAQsFADAY
+      MRYwFAYDVQQKEw1jbHVzdGVyLmxvY2FsMB4XDTI0MDQyNDIxMTIwOFoXDTM0MDQy
+      MjIxMTIwOFowGDEWMBQGA1UEChMNY2x1c3Rlci5sb2NhbDCCASIwDQYJKoZIhvcN
+      AQEBBQADggEPADCCAQoCggEBANZdGOe3BAh4sRQzUA5nXxjP+dS3KenbGGbjiNRx
+      7zGLFxWCA36KlXnN1FcWgoaajYOUn3EkUHS472ipBXuKXUPwdUCCbrlbhRAt0BCp
+      vyNJmy0VAqinSCl7LByJb1e9tvJtjW/LvC6RnLrPgdpMKJjh1Ef6pOoIo536zkJf
+      4seQ1gFnF06b4SI/YZAWXaWJN2byJuhKbaVyDEMqwksswR7p/dHHd9D0DE0qShni
+      L+PkVK0tPeaE5k9Z42IlS8+Ks3TbFM8WYxYswgyjb0UpQydbAUwgX4udIHmMFN1Q
+      jCn6NVoERkUBIrbayhxtZutDmNbzCJkZLGH8+m9i1dQung8CAwEAAaNCMEAwDgYD
+      VR0PAQH/BAQDAgIEMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFEBmZRO9PMHL
+      GmwL/a1tjzNkoxHDMA0GCSqGSIb3DQEBCwUAA4IBAQBltviB8ojQkBApV2B8cJWk
+      iMjdExPBW+482KzIlIVZc7Q9Z0PNb01+LHadskdLsMN89d9V8z4DAV++Bx/SlVbz
+      c/jKXkyNYkAwLG6gZJ68JefP6Ar78JSJTRJiX1bK3MH/Sg+2d8oxWdkEaaL4CVnL
+      PrM4TLhSk+xZbwnR3b5mwSM1AIZQpHMuIi/OI9jWhNiHUXryBrvNm2OQtjiElv4W
+      pLPkPZseHw+vn0WSF/rn8Ckr0m61mqeKIexGGEh+J+1MnGWwC8WSC2XLDZzpsLFI
+      xPYp4kBZUf2uXLF/vlhQLo1JwBvHvVgyepKJCbB75y2q1RPIDdyDGcsU+VfiNaqP
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-04-25T10:18:31Z"
+    labels:
+      istio.io/config: "true"
+    name: istio-ca-root-cert
+    namespace: dev
+    resourceVersion: "49114"
+    uid: 39f16157-adc5-4b74-9c68-513450c844df
+- apiVersion: v1
+  data:
+    ca.crt: |
+      -----BEGIN CERTIFICATE-----
+      MIIDBTCCAe2gAwIBAgIIbbZ/lzE6pjEwDQYJKoZIhvcNAQELBQAwFTETMBEGA1UE
+      AxMKa3ViZXJuZXRlczAeFw0yNDA0MjMyMjU3NDlaFw0zNDA0MjEyMzAyNDlaMBUx
+      EzARBgNVBAMTCmt1YmVybmV0ZXMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+      AoIBAQC7XnoYO8rajrrPSIwXUDFs37BcImNN+rDCw8qa8kh/rAmVrtQqDylA7MCV
+      I73KXoGCXlXIcKtV7wQ7ty7G5uSLqicEvDpRJs2OK4U/AlOJF5OV2LwvNvzhaecV
+      zANJk7HiuQzfXg7g+7ZLszxT8SYTZMb1/oChutRB3CLEhA1fQ1GJMfq7y1hRuw4r
+      2uRGxyBe0vH0qj4sRQhPGaQ1kJM0BSNWaoW7AUy/zi/nAAdMPZQfpkxaaa5R7MJr
+      O3pIDCybtTGTUQnuUcq/TVPyDN5amHMKHRDYsHCmJK1jMuCIbhPk8HcnCjIQRJSt
+      SUwXpnxGViZnymMCBPGdDqwbNeuZAgMBAAGjWTBXMA4GA1UdDwEB/wQEAwICpDAP
+      BgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRtPXxYDuquqs+o6PIZ3MMcSA0hajAV
+      BgNVHREEDjAMggprdWJlcm5ldGVzMA0GCSqGSIb3DQEBCwUAA4IBAQA1GzlKHwFy
+      AWSvayqCGVjeGGEKULcWakqONI3VXaaeyO7MkXYZ38qYKQsAOr198eU8WGNXBmNM
+      TF1VGJdlyFpS+WgXcnNuSrxh3UUHYPVLNA+39rb1ZsHVff3vcw4N8gHvqoaB8wll
+      EGGdkNvushVDflFTPtRKmDDFsHszY0wb6p6Z9wEbp5dqj8nVRWcBe22RTXj9/F0n
+      B5GiGoaofnq7jDv3r8nEbo9iMRfit2QWv7ldYtE+tlkpy8MPGNCvJllvvHJ2b422
+      LZIbDh7qSuygz6ezkC67Ny7pKy5b7Y/rtvkrfSEoOyoiFPBEugDFyrsBRSRxHf/P
+      D2iMgxcPHou0
+      -----END CERTIFICATE-----
+  kind: ConfigMap
+  metadata:
+    annotations:
+      kubernetes.io/description: Contains a CA bundle that can be used to verify the
+        kube-apiserver when using internal endpoints such as the internal service
+        IP or kubernetes.default.svc. No other usage is guaranteed across distributions
+        of Kubernetes clusters.
+    creationTimestamp: "2024-04-25T10:18:31Z"
+    name: kube-root-ca.crt
+    namespace: dev
+    resourceVersion: "49116"
+    uid: f9d7ae8d-f525-4bae-afba-22517df450b7
+- apiVersion: v1
+  data:
+    index.html: |-
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Welcome Page</title>
+      </head>
+      <body style="background-color: blueviolet;">
+          <h1 style="padding-top: 20%; padding-bottom: 20%; text-align: center; color: white; font-size: 48px;"> Welcome to the Website Folks </h1>
+      </body>
+      </html>
+  kind: ConfigMap
+  metadata:
+    creationTimestamp: "2024-05-13T22:17:11Z"
+    name: webapp-cm
+    namespace: dev
+    resourceVersion: "430398"
+    uid: 3a552450-8b27-4a9b-a974-cce05f74f409
+kind: List
+metadata:
+  resourceVersion: ""
